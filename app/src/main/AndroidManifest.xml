@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Portfolio">
-        <activity android:name=".CoverLetter"></activity>
+        <activity android:name=".ProfessionalSummary"></activity>
+        <activity android:name=".Transcript" />
+        <activity android:name=".Credentials" />
+        <activity android:name=".CareerGoal" />
+        <activity android:name=".CoverLetter" />
         <activity android:name=".Resume" />
         <activity android:name=".Personal_data" />
         <activity android:name=".SplashScreen" />

@@ -40,6 +40,10 @@ public class Personal_data extends AppCompatActivity {
                 return true;
             case R.id.cl:
                 startActivity(new Intent(Personal_data.this,CoverLetter.class));
+                return true;
+            case R.id.cg:
+                startActivity(new Intent(Personal_data.this,CareerGoal.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
 
