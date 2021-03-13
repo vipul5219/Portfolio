@@ -11,20 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Portfolio">
-        <activity android:name=".ProfessionalSummary"></activity>
+        <activity android:name=".CapstoneProject"></activity>
+        <activity android:name=".AcademicWorkExperience" />
+        <activity android:name=".ProfessionalSummary" />
         <activity android:name=".Transcript" />
         <activity android:name=".Credentials" />
         <activity android:name=".CareerGoal" />
         <activity android:name=".CoverLetter" />
         <activity android:name=".Resume" />
         <activity android:name=".Personal_data" />
-        <activity android:name=".SplashScreen" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <meta-data

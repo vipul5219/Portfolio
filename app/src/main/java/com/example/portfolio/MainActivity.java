@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     @Override
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu,menu);
         return true;
-
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.ps:
                 startActivity(new Intent(MainActivity.this, ProfessionalSummary.class));
                 return true;
-
-
+            case R.id.awe:
+                startActivity(new Intent(MainActivity.this,AcademicWorkExperience.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
-
         }
     }
 
